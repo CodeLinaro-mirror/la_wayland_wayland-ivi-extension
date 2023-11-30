@@ -15,6 +15,13 @@
  * limitations under the License.
  *
  ****************************************************************************/
+
+/* Changes from Qualcomm Innovation Center are provided under the following license:
+
+ * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,6 +33,8 @@
 #include "ilm_types.h"
 #include "wayland-util.h"
 #include "wayland-client.h"
+
+ILM_COMMON_PLATFORM_FUNC gIlmCommonPlatformFunc;
 
 static ilmErrorTypes wayland_init(t_ilm_nativedisplay nativedisplay);
 static t_ilm_nativedisplay wayland_getNativedisplay(void);

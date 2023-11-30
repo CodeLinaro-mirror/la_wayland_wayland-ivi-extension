@@ -15,6 +15,13 @@
  * limitations under the License.
  *
  ****************************************************************************/
+
+/* Changes from Qualcomm Innovation Center are provided under the following license:
+
+ * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,6 +33,8 @@
 #include "ilm_client_platform.h"
 #include "wayland-util.h"
 #include "ivi-application-client-protocol.h"
+
+ILM_CLIENT_PLATFORM_FUNC gIlmClientPlatformFunc;
 
 static ilmErrorTypes wayland_surfaceCreate(t_ilm_nativehandle nativehandle,
                          t_ilm_int width, t_ilm_int height,
