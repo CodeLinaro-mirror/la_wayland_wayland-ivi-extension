@@ -15,6 +15,13 @@
  * limitations under the License.
  *
  ****************************************************************************/
+
+/* Changes from Qualcomm Innovation Center are provided under the following license:
+
+ * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ */
+
 #ifndef _ILM_CLIENT_PLATFORM_H_
 #define _ILM_CLIENT_PLATFORM_H_
 
@@ -35,7 +42,7 @@ typedef struct _ILM_CLIENT_PLATFORM_FUNC
     ilmErrorTypes (*destroy)();
 } ILM_CLIENT_PLATFORM_FUNC;
 
-ILM_CLIENT_PLATFORM_FUNC gIlmClientPlatformFunc;
+extern ILM_CLIENT_PLATFORM_FUNC gIlmClientPlatformFunc;
 
 void init_ilmClientPlatformTable();
 
